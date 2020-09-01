@@ -1,0 +1,276 @@
+h2 {
+    pointer-events: none;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.container .card {
+    position: relative;
+    max-width: 600px;
+    height: 350px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #171717;
+}
+
+.contact-card-container .card {
+    height: 200px;
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+}
+
+.container .card:before {
+  content: "";
+  z-index: 7;
+  position: absolute;
+  top: -10px;
+  left: 32px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: #E6E5E1;
+}
+
+.container .card:after {
+  content: "";
+  z-index: 7;
+  position: absolute;
+  bottom: -10px;
+  left: 32px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: #E6E5E1;
+}
+
+.container .card ul {
+  z-index: 7;
+  position: absolute;
+  left: 39px;
+  top: 5px;
+  list-style-type: none;
+}
+
+.container .card ul li {
+  width: 2px;
+  height: 2px;
+  border-radius: 2px;
+  margin: 6px 0;
+  background-color: #E6E5E1;
+}
+
+.container .card h2 {
+  z-index: 7;
+  position: absolute;
+  bottom: 10px;
+  right: 130px;
+  font-size: 35px;
+  font-weight: 700;
+  color: #fff;
+  text-align: right;
+}
+
+.container .card .fa-arrow-right {
+  z-index: 8;
+  position: absolute;
+  right: 75px;
+  bottom: 25px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.container .card p {
+  z-index: 7;
+  position: absolute;
+  bottom: 10px;
+  left: 60px;
+  color: rgba(0,0,0,0);
+  font-size: 20px;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  max-width: 400px;
+}
+
+.container .card .pic {
+  z-index: 8;
+  width: 500px;
+  height: 350px;
+  background-image: url("https://images.unsplash.com/photo-1525543907410-b2562b6796d6?ixlib=rb-0.3.5&s=9ff8e5e718a6a40cbd0e1471235912f4&auto=format&fit=crop&w=3452&q=80");
+  background-size: 100% 100%;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.contact-card .pic {
+    height: 200px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.container .card .social {
+  position: absolute;
+  left: 60px;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 180px;
+  height: 64px;
+  border-radius: 80px;
+}
+
+.container .card button {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  width: 30px;
+  height: 30px;
+  background-color: #DA4D1D;
+  opacity: 0.5;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  mix-blend-mode: hard-light;
+}
+
+.container .card:hover button {
+  -webkit-transform: scale(21.4);
+          transform: scale(21.4);
+}
+
+.container p {
+    color: rgba(0,0,0,0);
+    transition: all 0.5s linear;
+}
+
+.container .card:hover p {
+    color: #ffffff;
+}
+
+.container .card:hover h2, .container .card:hover i {
+    display: none;
+}
+
+.container .card:hover .pic {
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
+}
+
+.container .card1 .pic { background-image: url(../img/offering.jpg); }
+.container .card2 .pic { background-image: url(../img/advisory.jpg); }
+.container .card3 .pic { background-image: url(../img/servicing.jpg); }
+.container .card4 .pic { background-image: url(../img/high-end-medical.jpg); }
+.container .card5 .pic { background-image: url(../img/international-medical-insurance.jpg); }
+.container .card6 .pic { background-image: url(../img/critipartner.jpg); }
+.container .card7 .pic { background-image: url(../img/mission-statement.jpg); }
+.container .card8 .pic { background-image: url(../img/founder-story.jpg); }
+.container .card9 .pic { background-image: url(../img/our-motto.jpg); }
+.container .card10 .pic { background-image: url(../img/call.jpg); }
+.container .card11 .pic { background-image: url(../img/email.jpg); }
+.container .card12 .pic { background-image: url(../img/address.jpg); }
+
+
+.container .card1 button { background-color: #d89b2a; }
+.container .card2 button { background-color: #26c3c3; }
+.container .card3 button { background-color: #9bbe00; }
+.container .card5 button { background-color: #26c3c3; }
+.container .card7 button { background-color: #26c3c3; }
+.container .card8 button { background-color: #2643c3; }
+.container .card9 button { background-color: #c3266f; }
+.container .card10 button { background-color: #c32626; }
+.container .card11 button { background-color: #2a942a; }
+.container .card12 button { background-color: #ac7a1f; }
+
+.dr {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 100px;
+}
+
+@media (max-width: 1050px) {
+  .container .card .fa-arrow-right {
+    display: none;
+  }
+  .container .card h2 {
+    right: 50px;
+    bottom: 10px;
+}
+}
+
+@media(max-width: 900px) {
+    .container .card h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .container .card button {
+        display: none;
+    }
+    .container .card h2 {
+        right: 10px;
+        bottom: 10px;
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 700px) {
+    .operating-model-container {
+        flex-direction: column;
+        height: 700px;
+    }
+    .operating-model-container .card button {
+        display: block;
+        right: 20px;
+        bottom: 35px;
+        width: 30px;
+        height: 30px;
+    }
+    .operating-model-container .card h2 {
+        right: 70px;
+        bottom: 30px;
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container .card {
+        width: 90vw;
+    }
+    .container .card p {
+        font-size: 14px;
+    }
+}

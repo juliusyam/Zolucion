@@ -1,0 +1,232 @@
+.slider {
+    height: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.link{
+    position: relative;
+    width: 100%;
+}
+  
+.link:after{
+    content: '';
+    position: absolute;
+    width: 0; height: 3px;
+    display: block;
+    margin-top: 0px;
+    right: 0;
+    background: #fff;
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+}
+   
+.link:hover:after{
+    width: 100%;
+    left: 0;
+    background: #fff;
+}
+
+.page-title h1, .page-title h2 {
+    color: white;
+}
+
+.page-title {
+    margin-bottom: 10px;
+}
+
+slider {
+    display: block;
+    width: 100%;
+    height: 500px;
+    background: #1f1f1f;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+slider > * {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 500px;
+    background: #1f1f1f;
+    animation: none; /*slide 12s infinite;*/
+    overflow: hidden;
+    z-index: -1;
+}
+
+.slide-1:nth-child(1) {
+    left: 0%;
+    animation-delay: -1s;
+    background-image: url(../img/partnership.png);
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes slide {
+    0% {left: 100%; width: 100%;}
+    5% {left: 0%;}
+    25% {left: 0%;}
+    30% {left: -100%; width: 100%;}
+    30.0001% {left: -100%; width: 0%;}
+    100% {left: 100%; width: 0%;}
+}
+
+.selection-bar {
+    padding: 0 0 20px 0;
+}
+
+.selection-inner-bar {
+    border-radius: 6px;
+    background: #171717;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 3;
+    text-align: left;
+    margin: 30px 0;
+}
+
+.selection-button {
+    padding: 10px;
+    background: black;
+    border: none;
+    border-radius: 6px;
+    margin: 1px;
+}
+
+.selection-button:hover {
+    background: #00b6be;
+}
+
+.selection-button:focus {
+    background: #00b6be;
+    outline: none;
+}
+
+.eco:hover {
+    background: #7c862f;
+}
+
+.eco:focus {
+    background: #7c862f;
+    outline: none;
+}
+
+.large-sponsor, .large-eco-sponsor {
+    padding: 50px;
+    text-align: center;
+}
+.large-sponsor {
+    background-color: #00b6be;
+}
+.large-eco-sponsor {
+    background-color: #7c862f;
+}
+
+.group-entry {
+    border-top: 2px dotted white;
+    margin: 20px 0;
+    padding-top: 20px;
+    display: block;
+}
+
+.individual-entry {
+    max-width: 400px;
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.entry-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.entry-image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.entry-title, .entry-sub-title, .entry-content {
+    text-align: left;
+    color: white;
+}
+
+.entry-title {
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 1000;
+    letter-spacing: 1.5px;
+}
+
+.entry-sub-title {
+    font-size: 18px;
+    color: #f1f6f6;
+    letter-spacing: 1px;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+.entry-content {
+    line-height: 1.5;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+.small-sponsor, .small-eco-sponsor {
+    padding: 40px;
+    text-align: center;
+}
+.small-sponsor {
+    background-color: #00b6be;
+}
+.small-eco-sponsor {
+    background-color: #7c862f;
+}
+
+.small-entry-image {
+    width: 250px;
+    height: auto;
+    margin: 20px;
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (max-width: 1250px) {
+    .individual-entry {
+        max-width: 35vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    .large-sponsor, .large-eco-sponsor {
+        padding: 20px;
+    }
+    .small-sponsor, .small-eco-sponsor {
+        padding: 20px;
+    }
+    .slider-title {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .selection-inner-bar {
+        margin: 0;
+    }
+    .individual-entry {
+        max-width: 100vw;
+        margin: 1vw;
+        padding: 1vw;
+    }
+    .small-entry-image {
+        margin: 5px;
+        width: 40vw;
+    }
+}

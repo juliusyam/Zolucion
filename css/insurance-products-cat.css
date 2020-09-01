@@ -1,0 +1,97 @@
+.product-slider {
+    background-image: url(../img/sample-16.png);
+    background-position: center center;
+    background-size: cover;
+    padding: 70px 40px 40px 40px;
+    min-height: 100vh;
+}
+
+.glider {
+    max-width: 1000px;
+}
+
+.glider-sts-1-section {
+    display: none;
+}
+
+.glider-contain h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.glider img {
+    width: 100%;
+}
+
+.glider p {
+    text-align: center;
+}
+
+.title-p {
+    font-family:'Proxima-Nova-Black';
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #434758;
+}
+
+.des-p {
+    font-family:'Proxima-Nova-Regular';
+    color: #e7e8ee;
+    margin: 20px 30px;
+    font-weight: 500;
+}
+
+figure {
+    background-color: #181a21;
+    border-radius: 8px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+figure button {
+    padding: 10px 30px;
+    background: #000000;
+    color: #dbb052;
+    border: 1px solid rgb(37, 37, 37);
+    border-radius: 8px; 
+    height: 50px;
+    border: 2px solid #00b8be;
+    position: relative;
+    transition: color 0.4s linear;
+}
+
+figure button::before {
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00b8be;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform: scaleX(0);
+    border-radius: 8px;
+}
+
+figure button:hover::before {
+    transform: scaleX(1);
+}
+
+@media (max-width: 700px) {
+    .glider-sts-2-section {
+        display: none;
+    }
+    .glider-sts-1-section {
+        display: block;
+    }
+}
+
+@media (max-width: 900px) {
+    .glider {
+        width: 100%;
+    }
+}
+

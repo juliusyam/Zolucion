@@ -1,0 +1,145 @@
+.bg-modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(23, 23, 23, 0.7);
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 5;
+    transition: 900ms all linear;
+}
+
+.bg-modal.clicked {
+    transition: 900ms all linear;
+}
+
+.modal-frame {
+    width: 80vw;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    background-position: right bottom;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+.individual-modal { background-image: url(../img/individual-vector.png);}
+.engaged-modal { background-image: url(../img/engaged-vector.png);}
+.married-modal { background-image: url(../img/married-vector.png);}
+.corporate-modal { background-image: url(../img/corporate-vector.png);}
+.mission-statement-modal { background-image: url(../img/mission-statement-vector.png);}
+
+.modal-title-and-close {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bg-modal h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+.bg-modal h3 {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    margin-block-end: 0.5em;
+}
+
+.bg-modal h5 {
+    font-size: 20px;
+    max-width: 500px;
+    letter-spacing: 1px;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.modal-text-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 20px 40px 20px 0;
+}
+
+.close {
+    font-size: 60px;
+    font-weight: 700;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+    .description, .button-icon {
+        padding: 20px;
+    }
+    .description {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 900px) { /*Tablet CSS*/
+    .description, .button-icon {
+        padding: 10px;
+    }
+    .button-icon {
+        font-size: 6vw;
+    }
+    .align-left, .align-right {
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 600px) { /*Phone CSS*/
+    .description, .button-icon {
+        padding: 10px;
+    }
+    .button-icon {
+        font-size: 6vw;
+    }
+    .button-div {
+        flex-direction: column;
+        height: auto;
+    }
+    .individual-grid {
+        min-height: 300px;
+        border-top: 1px solid white;
+    }
+    .modal-frame {
+        height: 400px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .modal-frame {
+        padding: 10px;
+        background-size: 200px;
+    }
+    .bg-modal h1 {
+        font-size: 25px;
+    }
+    .bg-modal h3 {
+        font-size: 20px;
+    }
+    .bg-modal li {
+        font-size: 16px;
+    }
+    .close {
+        font-size: 50px;
+    }
+    .modal-text-grid {
+        margin: 10px 20px 10px 0;
+    }
+}

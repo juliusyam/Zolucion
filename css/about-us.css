@@ -1,0 +1,150 @@
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    max-height: 100vh;
+    width: 100%;
+}
+
+.background-video {
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+
+.button-container {
+    background-image: none;
+}
+
+.button-div {
+    display: none;
+    background-color: #171717;
+    text-align: center;
+    padding: 50px;
+}
+
+span {
+    color: black;
+}
+
+.button-ul {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+@media (max-width: 1250px) {
+    .button-ul {
+        display: none;
+    }
+    .button-div {
+        display: block;
+    }
+}
+
+.button-ul .li {
+    margin: 0 5px;
+}
+.button-ul .li a .fas  {
+    font-size: 30px;
+    color: #333;
+    line-height: 80px;
+    padding-right: 14px;
+    margin: 0;
+}
+.button-ul .li a span {
+    position: absolute;
+    top: 20px;
+    color: #333;
+    letter-spacing: 4px;
+    transition: 0.5s;
+}
+.button-ul .li a {
+    text-decoration: none;
+    display: absolute;
+    display: block;
+    width: 210px;
+    height: 80px;
+    background: #fff;
+    text-align: left;
+    padding-left: 20px;
+    transform: rotate(-30deg) skewX(25deg) translate(0,0);
+    transition: 0.5s;
+    box-shadow: -20px 20px 10px rgba(0,0,0,0.5);
+}
+.button-ul .li a:before {
+    content:'';
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background-color: #b1b1b1;
+    transform: 0.5s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+.button-ul .li a:after {
+    content:'';
+    position: absolute;
+    bottom: -18px;
+    left: -10px;
+    height: 23%;
+    width: 101%;
+    background-color: #b1b1b1;
+    transform: 0.5s;
+    transform: rotate(0deg) skewX(-45deg);
+}
+
+.button-ul .li a:hover {
+    transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+    box-shadow: -50px 50px 50px rgba(0,0,0);
+    background: #00b6be;
+}
+
+.button-ul .li:hover a:before, .button-ul .li:hover a:after {
+    background-color: #dbb052;
+}
+
+.individual-button-inline {
+    display: inline-block;
+    width: 420px;
+    height: 350px;
+}
+
+.individual-button-container {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.line {
+    width: 350px;
+    height: 10px;
+    background: #dbb052;
+}
+
+.individual-button-container h2 {
+    font-size: 40px;
+    color: #dbb052;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    transition: 0.5s ease all;
+    line-height: 50px;
+    transition-delay: line-height 300ms;
+}
+
+.individual-button-container:hover h2 {
+    letter-spacing: 0.1px;
+    font-weight: 1000;
+    line-height: 70px;
+}
+
+.individual-button-container:hover {
+    justify-content: space-evenly;
+}
